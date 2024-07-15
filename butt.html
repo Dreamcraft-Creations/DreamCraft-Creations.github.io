@@ -3,57 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dreamcraft Creations</title>
+    <title>Payment Interface Mockup</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1em 0;
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile {
             text-align: center;
+            margin-bottom: 20px;
         }
-        main {
-            padding: 2em;
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 auto;
         }
-        footer {
-            background: #333;
-            color: #fff;
+        .name {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .phone {
+            color: #777;
+        }
+        .amount {
+            font-size: 32px;
+            font-weight: bold;
             text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin: 20px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background-color: #e0e8ff;
+            color: #1a73e8;
+        }
+        .btn-secondary {
+            background-color: #f1f3f4;
+            color: #3c4043;
+        }
+        .status {
+            text-align: center;
+            color: #34a853;
+            margin-bottom: 10px;
+        }
+        .timestamp {
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .transaction-details {
+            background-color: #f1f3f4;
+            padding: 10px;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Dreamcraft Creations</h1>
-    </header>
-    <main>
-        <h2>Welcome to Dreamcraft Creations</h2>
-        <p>We specialize in making your dreams come true with our high-quality interior design services.</p>
-        <ul>
-            <li>Modular Kitchens</li>
-            <li>Modular Wardrobes</li>
-            <li>Lighting</li>
-            <li>Flooring</li>
-            <li>Electrical Work</li>
-            <li>Civil Work</li>
-            <li>False Ceiling</li>
-            <li>Aluminium Work</li>
-            <li>ACP</li>
-            <li>Wallpaper</li>
-            <li>Wall Design & Painting</li>
-        </ul>
-    </main>
-    <footer>
-        <p>Contact us at dreamcraftcreations44@gmail.com</p>
-    </footer>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-img"></div>
+            <div class="name">John Doe</div>
+            <div class="phone">+91 ******1234</div>
+        </div>
+        <div class="amount">₹500</div>
+        <div class="buttons">
+            <button class="btn btn-primary">Pay again</button>
+            <button class="btn btn-secondary">Split with friends</button>
+        </div>
+        <div class="status">✓ Completed</div>
+        <div class="timestamp">15 Jul 2024 12:00 pm</div>
+        <div class="transaction-details">
+            <p><strong>Bank Name</strong></p>
+            <p>UPI transaction ID: 123456789012</p>
+            <p>To: JOHN DOE</p>
+            <p>From: JANE SMITH</p>
+        </div>
+    </div>
 </body>
 </html>
