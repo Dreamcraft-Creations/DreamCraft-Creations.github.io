@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obera Spaces Landing Page</title>
-
-
     <style>
         #intro {
             background-image: url('https://media.gettyimages.com/id/1472625321/video/multicolored-bokeh-particles-sparks-on-nice-background-with-infinte-loop-vertical-9-16-format.jpg?s=640x640&k=20&c=jj4ff4PGV-12Wsgtmn_MVh_Z3OEQH8a0KWtwX7ohcKU=');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            position: relative;
+            height: 100vh; /* Full screen height */
             color: white; /* Optional: Adjust text color for readability */
             text-align: center; /* Optional: Center the text */
-            padding: 50px; /* Optional: Adjust padding */
+            position: relative; /* Needed for the pseudo-element */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         /* Make the background non-downloadable */
@@ -33,12 +34,8 @@
             pointer-events: none;
         }
     </style>
-    
-
-
-
-    
 </head>
+
 <body>
 
     <!-- Intro Section -->
